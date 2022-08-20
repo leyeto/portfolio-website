@@ -1,0 +1,21 @@
+@use "../../../styles/colors" as c;
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    display: flex;
+    column-gap: 1rem;
+  }
+
+  &__logo {
+    height: 3.2rem;
+  }
+
+  &__list-item {
+    a {
+      color: c.$mine-white;
+      font-size: 1.6rem;
+    }
+  }
+}
