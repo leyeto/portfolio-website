@@ -14,4 +14,12 @@
   &__statement {
     color: c.$mine-slate;
   }
+
+  &__quote {
+    margin: 2rem 0;
+
+    &-heading {
+      color: c.$mine-lightest-blue;
+    }
+  }
 }
