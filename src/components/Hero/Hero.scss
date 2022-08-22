@@ -1,0 +1,25 @@
+@use "../../../styles/colors" as c;
+.hero {
+  margin: 20vh auto;
+  width: min(100% - 6rem, 70rem);
+  &__sub {
+    color: c.$mine-light-blue;
+  }
+  &__main-name {
+    color: c.$mine-white;
+  }
+  &__main-mission {
+    color: c.$mine-slate;
+  }
+  &__statement {
+    color: c.$mine-slate;
+  }
+
+  &__quote {
+    margin: 2rem 0;
+
+    &-heading {
+      color: c.$mine-lightest-blue;
+    }
+  }
+}

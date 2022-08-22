@@ -1,0 +1,44 @@
+@use "../../../styles/colors" as c;
+
+.about {
+  margin: 20vh auto;
+  width: min(100% - 6rem, 70rem);
+
+  &__heading {
+    color: c.$mine-lightest-blue;
+  }
+
+  &__first-p {
+    p {
+      margin: 1rem 0;
+    }
+  }
+  &__picture {
+    display: flex;
+    justify-content: center;
+    margin: 1.6rem 0;
+  }
+
+  &__picture-img {
+    filter: blur(0.5rem);
+    transition: filter 1000ms 500ms;
+    max-height: 40rem;
+
+    &:hover {
+      filter: blur(0);
+    }
+  }
+
+  &__graph {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__anime-quote {
+    margin: 2rem 0;
+  }
+
+  &__anime-heading {
+    color: c.$mine-lightest-blue;
+  }
+}
