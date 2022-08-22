@@ -1,0 +1,39 @@
+@use "../../../styles/colors" as c;
+
+.contact {
+  margin: 20vh auto;
+  text-align: center;
+  width: min(100% - 6rem, 50rem);
+  &__heading {
+    color: c.$mine-lightest-blue;
+  }
+
+  &__statement2 {
+    margin: 1rem 0 3rem;
+  }
+
+  &__email {
+    font-size: 2rem;
+    border: c.$mine-lightest-blue 2px solid;
+    padding: 1rem;
+    border-radius: 2rem;
+    transition: all 2s;
+
+    &:hover {
+      background-color: c.$mine-light-blue;
+      color: c.$mine-white;
+    }
+  }
+
+  &__links {
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list-item {
+    height: 3rem;
+    width: 3rem;
+    margin: 0 2rem;
+  }
+}

@@ -33,4 +33,12 @@
     display: flex;
     justify-content: center;
   }
+
+  &__anime-quote {
+    margin: 2rem 0;
+  }
+
+  &__anime-heading {
+    color: c.$mine-lightest-blue;
+  }
 }

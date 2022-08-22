@@ -22,7 +22,7 @@ const Header = () => {
             <div className="header__navbar">
               <ul className="header__list">
                 <li className="header__list-item">
-                  <a href="/">About me</a>
+                  <a href="#about">About me</a>
                 </li>
                 <li className="header__list-item">
                   <a href="/">Experience</a>
@@ -31,7 +31,7 @@ const Header = () => {
                   <a href="/">Work</a>
                 </li>
                 <li className="header__list-item">
-                  <a href="/">Contact me</a>
+                  <a href="#contact-me">Contact me</a>
                 </li>
                 <li className="header__list-item">
                   <a

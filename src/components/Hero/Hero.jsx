@@ -37,10 +37,10 @@ const Hero = () => {
         </p>
         <div className="hero__quote">
           <h3 className="hero__quote-heading">Programming Quote</h3>
-          <h4 className="hero__quote-is">
+          <p className="hero__quote-is">
             {programmingQuote} <br />
-            by {programmingQuoteAuthor}
-          </h4>
+            by "{programmingQuoteAuthor}"
+          </p>
         </div>
       </div>
     </>
