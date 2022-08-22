@@ -1,19 +1,31 @@
 import myHeadShot from "../../assets/pictures/headshot.jpg";
-import React, { PureComponent } from "react";
-import {
-  BarChart,
-  Bar,
-  Cell,
-  XAxis,
-  YAxis,
-  CartesianGrid,
-  Tooltip,
-  Legend,
-  ResponsiveContainer,
-} from "recharts";
+import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 import skills from "../../data/skills";
+import "./AboutMe.scss";
+import { useState, useEffect } from "react";
+
+const axios = require("axios").default;
 
 const AboutMe = () => {
+  const [animeQuote, setAnimeQuote] = useState();
+  const [animeQuoteAnime, setAnimeQuoteAnime] = useState();
+  const [animeQuoteCharacter, setAnimeQuoteCharacter] = useState();
+
+  const Anime_API = "https://animechan.vercel.app/api/random";
+
+  const getAnime = () => {
+    axios.get(Anime_API).then((response) => {
+      console.log(response.data);
+      setAnimeQuote(response.data.quote);
+      setAnimeQuoteAnime(response.data.anime);
+      setAnimeQuoteCharacter(response.data.character);
+    });
+  };
+
+  useEffect(() => {
+    getAnime();
+  }, []);
+
   return (
     <>
       <div className="about">
@@ -53,17 +65,17 @@ const AboutMe = () => {
             width={750}
             height={300}
             data={skills}
-            margin={{
-              top: 5,
-              right: 30,
-              left: 20,
-              bottom: 5,
-            }}
+            // margin={{
+            //   top: 5,
+            //   right: 30,
+            //   left: 20,
+            //   bottom: 5,
+            // }}
           >
-            {/* <CartesianGrid strokeDasharray="3 3" /> */}
-            <XAxis dataKey="skill" />
+            <XAxis dataKey="skill" tick={{ fill: "white" }} fontSize={12} />
             <YAxis
               domain={[0, 100]}
+              tick={{ fill: "white" }}
               tickSize={6}
               label={{ value: "Percentage", angle: -90 }}
             />
@@ -71,11 +83,17 @@ const AboutMe = () => {
             <Legend />
             <Bar
               dataKey="percentage"
-              fill="#8884d8"
+              fill="#508991"
               barSize={40}
               background={{ fill: "#eee" }}
             />
           </BarChart>
+        </div>
+        <div className="about__anime-quote">
+          <h3 className="about__anime-heading">Anime Quote</h3>
+          <h4 className="about__anime-quotation">{animeQuote}</h4>
+          <p>Character: {animeQuoteCharacter}</p>
+          <p>Anime: {animeQuoteAnime}</p>
         </div>
       </div>
     </>
