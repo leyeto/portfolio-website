@@ -1,11 +1,16 @@
 @use "../../../styles/colors" as c;
+
 .header {
-  display: flex;
-  justify-content: space-between;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2rem;
+  }
 
   &__list {
     display: flex;
     column-gap: 1rem;
+    max-width: 70vw;
   }
 
   &__logo {
@@ -16,6 +21,21 @@
     a {
       color: c.$mine-white;
       font-size: 1.6rem;
+    }
+  }
+
+  &__resume-button {
+    border: c.$mine-lightest-blue 2px solid;
+    border-radius: 5px;
+    padding: 5px;
+    color: c.$mine-light-blue;
+
+    &:hover {
+      color: c.$mine-lightest-blue;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 3px solid green;
     }
   }
 }
