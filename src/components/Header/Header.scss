@@ -36,6 +36,7 @@
     a {
       color: c.$mine-white;
       font-size: 1.6rem;
+      transition: all 1s;
 
       &:hover {
         color: c.$mine-lightest-blue;
