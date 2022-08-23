@@ -28,10 +28,6 @@ const skills = [
     percentage: 40,
   },
   {
-    skill: "Responsive Design",
-    percentage: 60,
-  },
-  {
     skill: "AWS",
     percentage: 30,
   },
@@ -42,6 +38,10 @@ const skills = [
   {
     skill: "JAVA",
     percentage: 20,
+  },
+  {
+    skill: "Responsive Design",
+    percentage: 60,
   },
 ];
 
