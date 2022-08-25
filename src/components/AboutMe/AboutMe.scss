@@ -20,17 +20,17 @@
   }
 
   &__picture-img {
-    filter: blur(0.5rem);
+    filter: grayscale(100%);
     transition: filter 1000ms 500ms;
     max-height: 40rem;
 
     &:hover {
-      filter: blur(0);
+      filter: grayscale(0);
     }
   }
 
   &__graph {
-    display: flex;
+    display: none;
     justify-content: center;
   }
 
@@ -40,5 +40,30 @@
 
   &__anime-heading {
     color: c.$mine-lightest-blue;
+  }
+
+  &__skills {
+    margin: 10vh 0;
+  }
+
+  &__skills-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: baseline;
+  }
+
+  &__skill-item {
+    margin: 3rem 3rem;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  &__skill-img {
+    height: 10rem;
+  }
+
+  &__skill-name {
+    text-align: center;
   }
 }

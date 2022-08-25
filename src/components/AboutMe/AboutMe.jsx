@@ -89,6 +89,26 @@ const AboutMe = () => {
             />
           </BarChart>
         </div>
+        <div className="about__skills">
+          <h2 className="about__skills-heading">Skills</h2>
+          <ul className="about__skills-list">
+            {skills.map((skill) => {
+              return (
+                <>
+                  <li className="about__skill-item">
+                    <img
+                      className="about__skill-img"
+                      src={skill.url}
+                      alt={`${skill.skill} expected`}
+                    />
+                    <p className="about__skill-name">{skill.skill}</p>
+                  </li>
+                </>
+              );
+            })}
+          </ul>
+        </div>
+
         <div className="about__anime-quote">
           <h3 className="about__anime-heading">Anime Quote</h3>
           <h4 className="about__anime-quotation">{animeQuote}</h4>
