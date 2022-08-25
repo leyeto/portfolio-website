@@ -21,23 +21,23 @@ const Header = () => {
             </div>
             <div className="header__navbar">
               <ul className="header__list">
-                <li className="header__list-item">
+                <li className="header__list-item  header__about-me">
                   <a href="#about">About me</a>
                 </li>
-                <li className="header__list-item">
+                <li className="header__list-item header__experience">
                   <a href="/">Experience</a>
                 </li>
-                <li className="header__list-item">
+                <li className="header__list-item  header__work">
                   <a href="/">Work</a>
                 </li>
-                <li className="header__list-item">
+                <li className="header__list-item  header__contact-me">
                   <a href="#contact-me">Contact me</a>
                 </li>
                 <li className="header__list-item">
                   <a
                     className="header__resume-button"
                     href={fullStack}
-                    download
+                    target="blank"
                   >
                     Resume
                   </a>

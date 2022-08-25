@@ -33,7 +33,7 @@ const Hero = () => {
           I am a software engineer that specializes in designing and building
           websites. I am currently focused on expanding my skills and
           technologies to be a better developer. I am open to new opportunites
-          and projects
+          and projects.
         </p>
         <div className="hero__quote">
           <h3 className="hero__quote-heading">Programming Quote</h3>
