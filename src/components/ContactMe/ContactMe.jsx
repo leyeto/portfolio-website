@@ -9,8 +9,8 @@ const ContactMe = () => {
       <div className="contact" id="contact-me">
         <h2 className="contact__heading">Contact Me</h2>
         <p className="contact__statement">
-          Thanks for visiting my website, I currently open to new opportunites
-          and working on building my portfolio.
+          Thanks for visiting my website, I am currently open to new
+          opportunites and working on projects.
         </p>
         <p className="contact__statement2">
           Feel free to contact me with the click me below.

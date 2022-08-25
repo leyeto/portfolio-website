@@ -36,7 +36,7 @@ const AboutMe = () => {
               <p>
                 Hi! My name is Adeleye, would prefer to be called Leye but most
                 people pronounce it wrongly as Leigh. I have degrees in Computer
-                Engineering and Information Technology, I previously worked in
+                Engineering and Information Technology. I previously worked in
                 the NHS in an administrative capacity. I change careers to
                 Software Engineering due to my passion for programming and
                 building solutions.
