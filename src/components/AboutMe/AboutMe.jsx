@@ -37,7 +37,7 @@ const AboutMe = () => {
                 Hi! My name is Adeleye, would prefer to be called Leye but most
                 people pronounce it wrongly as Leigh. I have degrees in Computer
                 Engineering and Information Technology and previously worked in
-                the NHS in an administrative capacity. I've changes careers to
+                the NHS in an administrative capacity. I've changed careers to
                 Software Engineering due to my passion for programming and
                 building solutions.
               </p>
@@ -48,14 +48,15 @@ const AboutMe = () => {
                 various projects while at BrainStation.
               </p>
               <p>
-                As part of the programme we were proposed a challenge 24-hour
-                challenge from start to finished product. The challenge was to
-                find a solution to the Global Warming crisis. My team consisted
-                of 2 Developers (including myself), 2 UX Designers and 1 Data
-                Scientist. Our solution was FixIT, a mobile application that
-                connect people that have old, worn or out of fashion clothes or
-                furniture to people that can restore or rejuvenate these items.
-                We produced an awesome product and won the competition.
+                As part of the programme we were assigned a challenge and given
+                24 hours challenge from start to finished product. The challenge
+                was to find a solution to the Global Warming crisis. My team
+                consisted of 2 Developers (including myself), 2 UX Designers and
+                1 Data Scientist. Our solution was FixIT, a mobile application
+                that connects people that have old, worn or out of fashion
+                clothes or furniture to people that can restore or rejuvenate
+                these items. We produced an awesome product and won the
+                competition.
               </p>
             </div>
           </div>
