@@ -13,12 +13,12 @@ const ContactMe = () => {
           opportunites and working on projects.
         </p>
         <p className="contact__statement2">
-          Feel free to contact me with the click me below.
+          Feel free to contact me by clicking the link below.
         </p>
 
         <a
           className="contact__email"
-          href="mailto:ioaleye@gmail.com"
+          href="mailto:ioaleye@gmail.com?subject=Mail from portfolio website"
           target="blank"
         >
           Contact Me

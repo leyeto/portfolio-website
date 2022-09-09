@@ -36,18 +36,26 @@ const AboutMe = () => {
               <p>
                 Hi! My name is Adeleye, would prefer to be called Leye but most
                 people pronounce it wrongly as Leigh. I have degrees in Computer
-                Engineering and Information Technology. I previously worked in
-                the NHS in an administrative capacity. I change careers to
+                Engineering and Information Technology and previously worked in
+                the NHS in an administrative capacity. I've changes careers to
                 Software Engineering due to my passion for programming and
                 building solutions.
               </p>
               <p>
-                I attended and graduated from BrainStation bootcamp in London
-                2022 to help achieve this goal. I worked on a number of
-                technologies and worked on various projects while at
-                BrainStation. My team also won the Industry project challenge, a
-                24 hour challenge with Data Scientist and UX Designer. The goal
-                is to produce a solution and product within the time.
+                I attended and graduated from BrainStation's Software
+                Engineering bootcamp in London in 2022 to help achieve this
+                goal. I worked with a number of technologies and worked on
+                various projects while at BrainStation.
+              </p>
+              <p>
+                As part of the programme we were proposed a challenge 24-hour
+                challenge from start to finished product. The challenge was to
+                find a solution to the Global Warming crisis. My team consisted
+                of 2 Developers (including myself), 2 UX Designers and 1 Data
+                Scientist. Our solution was FixIT, a mobile application that
+                connect people that have old, worn or out of fashion clothes or
+                furniture to people that can restore or rejuvenate these items.
+                We produced an awesome product and won the competition.
               </p>
             </div>
           </div>
@@ -61,17 +69,7 @@ const AboutMe = () => {
         </div>
 
         <div className="about__graph">
-          <BarChart
-            width={750}
-            height={300}
-            data={skills}
-            // margin={{
-            //   top: 5,
-            //   right: 30,
-            //   left: 20,
-            //   bottom: 5,
-            // }}
-          >
+          <BarChart width={750} height={300} data={skills}>
             <XAxis dataKey="skill" tick={{ fill: "white" }} fontSize={12} />
             <YAxis
               domain={[0, 100]}
