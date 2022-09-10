@@ -7,5 +7,10 @@ const projects = [
       imgLink: "",
       alt: "eRedbook picture",
     },
+    links: {
+      github: "",
+      video: "",
+      exLink: "",
+    },
   },
 ];
