@@ -2,30 +2,8 @@ import myHeadShot from "../../assets/pictures/headshot.jpg";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 import skills from "../../data/skills";
 import "./AboutMe.scss";
-import { useState, useEffect } from "react";
-
-const axios = require("axios").default;
 
 const AboutMe = () => {
-  const [animeQuote, setAnimeQuote] = useState();
-  const [animeQuoteAnime, setAnimeQuoteAnime] = useState();
-  const [animeQuoteCharacter, setAnimeQuoteCharacter] = useState();
-
-  const Anime_API = "https://animechan.vercel.app/api/random";
-
-  const getAnime = () => {
-    axios.get(Anime_API).then((response) => {
-      console.log(response.data);
-      setAnimeQuote(response.data.quote);
-      setAnimeQuoteAnime(response.data.anime);
-      setAnimeQuoteCharacter(response.data.character);
-    });
-  };
-
-  useEffect(() => {
-    getAnime();
-  }, []);
-
   return (
     <>
       <div className="about" id="about">
@@ -91,28 +69,19 @@ const AboutMe = () => {
         <div className="about__skills">
           <h2 className="about__skills-heading">Skills</h2>
           <ul className="about__skills-list">
-            {skills.map((skill) => {
+            {skills.map((skill, i) => {
               return (
-                <>
-                  <li className="about__skill-item">
-                    <img
-                      className="about__skill-img"
-                      src={skill.url}
-                      alt={`${skill.skill} expected`}
-                    />
-                    <p className="about__skill-name">{skill.skill}</p>
-                  </li>
-                </>
+                <li key={i} className="about__skill-item">
+                  <img
+                    className="about__skill-img"
+                    src={skill.url}
+                    alt={`${skill.skill} expected`}
+                  />
+                  <p className="about__skill-name">{skill.skill}</p>
+                </li>
               );
             })}
           </ul>
-        </div>
-
-        <div className="about__anime-quote">
-          <h3 className="about__anime-heading">Anime Quote</h3>
-          <h4 className="about__anime-quotation">{animeQuote}</h4>
-          <p>Character: {animeQuoteCharacter}</p>
-          <p>Anime: {animeQuoteAnime}</p>
         </div>
       </div>
     </>

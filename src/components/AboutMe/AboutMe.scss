@@ -45,9 +45,11 @@
   &__skills {
     margin: 10vh 0;
   }
+  &__skills-heading {
+    color: c.$mine-lightest-blue;
+  }
 
   &__skills-list {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: baseline;
