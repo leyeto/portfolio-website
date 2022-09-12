@@ -41,6 +41,16 @@ const Projects = () => {
                       Loom
                     </a>
                   </li>
+                  {project.links.exLink && (
+                    <li className="projects__exlink">
+                      <a
+                        href={project.links.exlink}
+                        className="projects__exlink-link"
+                      >
+                        External Link
+                      </a>
+                    </li>
+                  )}
                 </ul>
               </div>
             </div>
