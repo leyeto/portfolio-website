@@ -2,30 +2,8 @@ import myHeadShot from "../../assets/pictures/headshot.jpg";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 import skills from "../../data/skills";
 import "./AboutMe.scss";
-import { useState, useEffect } from "react";
-
-const axios = require("axios").default;
 
 const AboutMe = () => {
-  const [animeQuote, setAnimeQuote] = useState();
-  const [animeQuoteAnime, setAnimeQuoteAnime] = useState();
-  const [animeQuoteCharacter, setAnimeQuoteCharacter] = useState();
-
-  const Anime_API = "https://animechan.vercel.app/api/random";
-
-  const getAnime = () => {
-    axios.get(Anime_API).then((response) => {
-      console.log(response.data);
-      setAnimeQuote(response.data.quote);
-      setAnimeQuoteAnime(response.data.anime);
-      setAnimeQuoteCharacter(response.data.character);
-    });
-  };
-
-  useEffect(() => {
-    getAnime();
-  }, []);
-
   return (
     <>
       <div className="about" id="about">
@@ -47,13 +25,6 @@ const AboutMe = () => {
                 goal. I worked with a number of technologies and worked on
                 various projects while at BrainStation.
               </p>
-              <a href="https://www.loom.com/share/dbef53f0089f4c1a876425a8c9eb2700">
-                <p>Loom Message - 24 August 2022 - Watch Video</p>
-                <img
-                  style={{ width: "300px" }}
-                  src="https://cdn.loom.com/sessions/thumbnails/dbef53f0089f4c1a876425a8c9eb2700-with-play.gif"
-                />
-              </a>
               <p>
                 As part of the programme we were assigned a challenge and given
                 24 hours challenge from start to finished product. The challenge
@@ -113,13 +84,6 @@ const AboutMe = () => {
               );
             })}
           </ul>
-        </div>
-
-        <div className="about__anime-quote">
-          <h3 className="about__anime-heading">Anime Quote</h3>
-          <h4 className="about__anime-quotation">{animeQuote}</h4>
-          <p>Character: {animeQuoteCharacter}</p>
-          <p>Anime: {animeQuoteAnime}</p>
         </div>
       </div>
     </>

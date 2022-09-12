@@ -3,8 +3,18 @@ import eredImg from "../assets/projectpics/eredbook.jpg";
 const projects = [
   {
     project: "eRed Book",
-    about: "What the project is about",
-    techs: ["JavaScript", "React", "Express", "VS"],
+    about:
+      "This project was inspired by the Red book given to parents/guardians at the birth. It is used for health record keeping and documenting interactions. It is the property of the parents and child not the NHS or health system. This my electronic version of the red book 'eRed Book'.",
+    techs: [
+      "JavaScript",
+      "React",
+      "Express",
+      "VS",
+      "JWT",
+      "MYSQL",
+      "Knex",
+      "Recharts",
+    ],
     img: {
       imgLink: `${eredImg}`,
       alt: "eRedbook picture",

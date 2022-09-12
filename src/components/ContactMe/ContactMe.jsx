@@ -6,8 +6,10 @@ import "./ContactMe.scss";
 const ContactMe = () => {
   return (
     <>
-      <div className="contact" id="contact-me">
-        <h2 className="contact__heading">Contact Me</h2>
+      <div className="contact">
+        <h2 className="contact__heading" id="contact-me">
+          Contact Me
+        </h2>
         <p className="contact__statement">
           Thanks for visiting my website, I am currently open to new
           opportunites and working on projects.

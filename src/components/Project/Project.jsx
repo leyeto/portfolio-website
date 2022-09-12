@@ -9,6 +9,11 @@ const Project = ({ project }) => {
           <p className="project__about-text">{project.about}</p>
         </div>
         <div className="project__tech">
+          <ul>
+            {project.techs.map((tech) => {
+              return <li>{tech}</li>;
+            })}
+          </ul>
           <p className="project__tech-text">{project.tech}</p>
         </div>
         <div className="project__image">
