@@ -69,18 +69,16 @@ const AboutMe = () => {
         <div className="about__skills">
           <h2 className="about__skills-heading">Skills</h2>
           <ul className="about__skills-list">
-            {skills.map((skill) => {
+            {skills.map((skill, i) => {
               return (
-                <>
-                  <li className="about__skill-item">
-                    <img
-                      className="about__skill-img"
-                      src={skill.url}
-                      alt={`${skill.skill} expected`}
-                    />
-                    <p className="about__skill-name">{skill.skill}</p>
-                  </li>
-                </>
+                <li key={i} className="about__skill-item">
+                  <img
+                    className="about__skill-img"
+                    src={skill.url}
+                    alt={`${skill.skill} expected`}
+                  />
+                  <p className="about__skill-name">{skill.skill}</p>
+                </li>
               );
             })}
           </ul>

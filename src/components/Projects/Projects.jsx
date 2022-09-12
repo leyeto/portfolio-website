@@ -28,8 +28,8 @@ const Projects = () => {
     <section>
       <div className="projects">
         <h1 className="projects__heading">Projects</h1>
-        {projects.map((project, key) => {
-          return <Project key={key} project={project} />;
+        {projects.map((project, i) => {
+          return <Project key={i} project={project} />;
         })}
 
         <div className="projects__anime-quote">
