@@ -47,6 +47,13 @@ const AboutMe = () => {
                 goal. I worked with a number of technologies and worked on
                 various projects while at BrainStation.
               </p>
+              <a href="https://www.loom.com/share/dbef53f0089f4c1a876425a8c9eb2700">
+                <p>Loom Message - 24 August 2022 - Watch Video</p>
+                <img
+                  style={{ width: "300px" }}
+                  src="https://cdn.loom.com/sessions/thumbnails/dbef53f0089f4c1a876425a8c9eb2700-with-play.gif"
+                />
+              </a>
               <p>
                 As part of the programme we were assigned a challenge and given
                 24 hours challenge from start to finished product. The challenge
