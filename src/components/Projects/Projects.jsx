@@ -38,8 +38,8 @@ const Projects = () => {
           <p>Character: {animeQuoteCharacter}</p>
           <p>Anime: {animeQuoteAnime}</p>
           <p>
-            Note: The quotes are gotten from an external API/server I do not
-            control
+            Disclaimer: The quotes are gotten from external APIs/servers I do
+            not control,
           </p>
         </div>
       </div>

@@ -1,3 +1,6 @@
+import gitImg from "../../assets/icons/github-link.svg";
+import videoImg from "../../assets/icons/video.svg";
+import linkImg from "../../assets/icons/link.svg";
 import "./Project.scss";
 
 const Project = ({ project }) => {
@@ -26,21 +29,51 @@ const Project = ({ project }) => {
         <div className="project__links">
           <ul className="project__links-list">
             <li className="project__git">
-              <a href={project.links.github} className="project__git-link">
-                Git
+              <a
+                href={project.links.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project__git-link"
+              >
+                git
+                <img
+                  className="project__githubImg"
+                  src={gitImg}
+                  alt="github-link"
+                />
               </a>
             </li>
             {project.links.loom && (
               <li className="project__loom">
-                <a href={project.links.loom} className="project__loom-link">
-                  Loom
+                <a
+                  href={project.links.loom}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project__loom-link"
+                >
+                  video
+                  <img
+                    className="project__videoImg"
+                    src={videoImg}
+                    alt="video-link"
+                  />
                 </a>
               </li>
             )}
             {project.links.exLink && (
               <li className="project__exlink">
-                <a href={project.links.exlink} className="project__exlink-link">
-                  External Link
+                <a
+                  href={project.links.exLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project__exlink-link"
+                >
+                  link
+                  <img
+                    className="project__externalImg"
+                    src={linkImg}
+                    alt="link to external website"
+                  />
                 </a>
               </li>
             )}
