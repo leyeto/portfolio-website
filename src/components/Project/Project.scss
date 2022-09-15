@@ -17,5 +17,13 @@
     display: flex;
     margin: 1rem 0;
     gap: 2rem;
+
+    img {
+      height: 2.5rem;
+    }
+
+    p {
+      visibility: hidden;
+    }
   }
 }
