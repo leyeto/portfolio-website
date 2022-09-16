@@ -18,7 +18,7 @@ const skills = [
     url: `${javascriptIcon}`,
   },
   {
-    skill: "Node",
+    skill: "NodeJS",
     percentage: 50,
     url: `${nodejsIcon}`,
   },
