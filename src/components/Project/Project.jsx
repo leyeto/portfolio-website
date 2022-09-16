@@ -35,7 +35,6 @@ const Project = ({ project }) => {
                 rel="noopener noreferrer"
                 className="project__git-link"
               >
-                git
                 <img
                   className="project__githubImg"
                   src={gitImg}
@@ -51,7 +50,6 @@ const Project = ({ project }) => {
                   rel="noopener noreferrer"
                   className="project__loom-link"
                 >
-                  video
                   <img
                     className="project__videoImg"
                     src={videoImg}
@@ -68,7 +66,6 @@ const Project = ({ project }) => {
                   rel="noopener noreferrer"
                   className="project__exlink-link"
                 >
-                  link
                   <img
                     className="project__externalImg"
                     src={linkImg}

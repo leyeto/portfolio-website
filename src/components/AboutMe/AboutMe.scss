@@ -1,4 +1,5 @@
 @use "../../../styles/colors" as c;
+@use "../../../styles/breakpoints" as b;
 
 .about {
   margin: 20vh auto;
@@ -50,15 +51,23 @@
   }
 
   &__skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: baseline;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include b.breakpoint("medium") {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
   }
+  // &__skills-list {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   justify-content: baseline;
+  // }
 
   &__skill-item {
-    margin: 3rem 3rem;
+    margin: 2rem 2rem;
     width: 15rem;
     height: 15rem;
+    text-align: center;
   }
 
   &__skill-img {

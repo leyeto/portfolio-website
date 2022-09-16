@@ -1,5 +1,5 @@
 import logoImg from "../../assets/logos/logo-full.svg";
-import fullStack from "../../assets/documents/Adeleye_Ifaturoti_Full_Stack_Web_Developer.pdf";
+import fullStack from "../../assets/documents/Adeleye_Ifaturoti_Full_Stack_React_Developer.pdf";
 
 import "./Header.scss";
 

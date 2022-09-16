@@ -37,9 +37,10 @@ const Projects = () => {
           <h4 className="projects__anime-quotation">{animeQuote}</h4>
           <p>Character: {animeQuoteCharacter}</p>
           <p>Anime: {animeQuoteAnime}</p>
+          <br />
           <p>
             Disclaimer: The quotes are gotten from external APIs/servers I do
-            not control,
+            not control.
           </p>
         </div>
       </div>
