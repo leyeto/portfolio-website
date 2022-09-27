@@ -1,6 +1,7 @@
 @use "../../../styles/colors" as c;
 
 .project {
+  margin: 0 0 3rem 0;
   &__header {
     color: c.$mine-light-blue;
   }

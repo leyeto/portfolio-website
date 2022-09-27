@@ -6,9 +6,11 @@
   &__nav {
     display: flex;
     align-items: flex-start;
-    column-gap: 2rem;
+    flex-direction: column;
 
     @include b.breakpoint("medium") {
+      align-items: center;
+      flex-direction: row;
       justify-content: space-between;
     }
     @include b.breakpoint("large") {
@@ -23,10 +25,9 @@
   }
 
   &__logo-div {
-    height: 10rem;
   }
   &__logo {
-    height: 4rem;
+    height: 6rem;
   }
 
   &__list-item {
