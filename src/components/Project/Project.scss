@@ -26,4 +26,14 @@
       visibility: hidden;
     }
   }
+
+  &__githubImg,
+  &__videoImg,
+  &__externalImg {
+    background-color: white;
+    transition: all 0.5s;
+    &:hover {
+      background-color: c.$mine-light-blue;
+    }
+  }
 }
