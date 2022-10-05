@@ -10,6 +10,7 @@ import responsiveIcon from "../assets/skills-logos/responsive.svg";
 import sassIcon from "../assets/skills-logos/sass.svg";
 import htmlIcon from "../assets/skills-logos/html5.svg";
 import springIcon from "../assets/skills-logos/springio.svg";
+import typescriptIcon from "../assets/skills-logos/typescript.svg";
 
 const skills = [
   {
@@ -68,9 +69,9 @@ const skills = [
     url: `${responsiveIcon}`,
   },
   {
-    skill: "Spring",
+    skill: "Typescript",
     percentage: 60,
-    url: `${springIcon}`,
+    url: `${typescriptIcon}`,
   },
 ];
 

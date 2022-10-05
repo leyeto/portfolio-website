@@ -1,0 +1,13 @@
+@use "../../../styles/colors" as c;
+.wakatime {
+  margin: 10vh auto 20vh;
+  width: min(100% - 6rem, 70rem);
+
+  &__divider {
+    margin: 3rem auto;
+  }
+
+  &__code-activity {
+    color: c.$mine-lightest-blue;
+  }
+}
