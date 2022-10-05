@@ -83,6 +83,11 @@ const AboutMe = () => {
             })}
           </ul>
         </div>
+        <div className="about__wakatime">
+          <figure>
+            <embed src="https://wakatime.com/share/@6b62278f-1f06-4dce-90a0-e447c9e59880/799e7616-c258-4ed2-995b-d0bbf6248ff5.svg"></embed>
+          </figure>
+        </div>
       </div>
     </>
   );
