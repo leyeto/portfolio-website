@@ -1,7 +1,21 @@
 @use "../../../styles/colors" as c;
+@use "../../../styles/breakpoints" as b;
 .wakatime {
   margin: 10vh auto 20vh;
   width: min(100% - 6rem, 70rem);
+
+  &__activity {
+    &-em {
+      transition: all 1s;
+      transform: rotate(90deg);
+      margin: 30rem 0rem 30rem 0rem;
+
+      @include b.breakpoint("medium") {
+        transform: rotate(0deg);
+        margin: auto;
+      }
+    }
+  }
 
   &__divider {
     margin: 3rem auto;
