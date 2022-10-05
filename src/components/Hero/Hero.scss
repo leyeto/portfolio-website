@@ -3,13 +3,13 @@
   margin: 10vh auto 20vh;
   width: min(100% - 6rem, 70rem);
   &__sub {
-    color: c.$mine-light-blue;
+    color: c.$mine-lightest-blue;
   }
   &__main-name {
     color: c.$mine-white;
   }
   &__main-mission {
-    color: c.$mine-slate;
+    color: c.$mine-lightest-slate;
   }
   &__statement {
     color: c.$mine-slate;

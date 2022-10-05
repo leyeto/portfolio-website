@@ -24,11 +24,11 @@ const Header = () => {
                 <li className="header__list-item  header__about-me">
                   <a href="#about">About me</a>
                 </li>
-                <li className="header__list-item header__experience">
-                  <a href="/">Experience</a>
+                <li className="header__list-item header__skills">
+                  <a href="#skills">Skills</a>
                 </li>
-                <li className="header__list-item  header__work">
-                  <a href="/">Work</a>
+                <li className="header__list-item  header__projects">
+                  <a href="#projects">Projects</a>
                 </li>
                 <li className="header__list-item  header__contact-me">
                   <a href="#contact-me">Contact me</a>
