@@ -9,7 +9,7 @@ import reactjsIcon from "../assets/skills-logos/reactjs.svg";
 import responsiveIcon from "../assets/skills-logos/responsive.svg";
 import sassIcon from "../assets/skills-logos/sass.svg";
 import htmlIcon from "../assets/skills-logos/html5.svg";
-import springIcon from "../assets/skills-logos/springio.svg";
+// import springIcon from "../assets/skills-logos/springio.svg";
 import typescriptIcon from "../assets/skills-logos/typescript.svg";
 
 const skills = [
