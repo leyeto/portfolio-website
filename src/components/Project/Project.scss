@@ -1,0 +1,40 @@
+@use "../../../styles/colors" as c;
+
+.project {
+  margin: 0 0 3rem 0;
+  &__header {
+    color: c.$mine-light-blue;
+  }
+
+  &__tech-list {
+    display: flex;
+    margin: 1.6rem 0;
+    li {
+      margin: 0 1.6rem 0 0;
+    }
+  }
+
+  &__links-list {
+    display: flex;
+    margin: 1rem 0;
+    gap: 2rem;
+
+    img {
+      height: 2.5rem;
+    }
+
+    p {
+      visibility: hidden;
+    }
+  }
+
+  &__githubImg,
+  &__videoImg,
+  &__externalImg {
+    background-color: white;
+    transition: all 0.5s;
+    &:hover {
+      background-color: c.$mine-light-blue;
+    }
+  }
+}

@@ -6,19 +6,21 @@ import "./ContactMe.scss";
 const ContactMe = () => {
   return (
     <>
-      <div className="contact" id="contact-me">
-        <h2 className="contact__heading">Contact Me</h2>
+      <div className="contact">
+        <h2 className="contact__heading" id="contact-me">
+          Contact Me
+        </h2>
         <p className="contact__statement">
           Thanks for visiting my website, I am currently open to new
           opportunites and working on projects.
         </p>
         <p className="contact__statement2">
-          Feel free to contact me with the click me below.
+          Feel free to contact me by clicking the link below.
         </p>
 
         <a
           className="contact__email"
-          href="mailto:ioaleye@gmail.com"
+          href="mailto:ioaleye@gmail.com?subject=Mail from portfolio website"
           target="blank"
         >
           Contact Me
