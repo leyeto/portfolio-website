@@ -36,6 +36,10 @@ const AboutMe = () => {
                 these items. We produced an awesome product and won the
                 competition.
               </p>
+              <p>
+                I am best suited for junior developer roles preferrably React,
+                Javascript, Typescript, Node, Java, Spring and many more.
+              </p>
             </div>
           </div>
           <div className="about__picture">
