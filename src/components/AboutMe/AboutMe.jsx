@@ -36,6 +36,10 @@ const AboutMe = () => {
                 these items. We produced an awesome product and won the
                 competition.
               </p>
+              <p>
+                I am best suited for junior developer roles preferrably React,
+                Javascript, Typescript, Node, Java, Spring and many more.
+              </p>
             </div>
           </div>
           <div className="about__picture">
@@ -66,7 +70,7 @@ const AboutMe = () => {
             />
           </BarChart>
         </div>
-        <div className="about__skills">
+        <div id="skills" className="about__skills">
           <h2 className="about__skills-heading">Skills</h2>
           <ul className="about__skills-list">
             {skills.map((skill, i) => {
@@ -82,11 +86,6 @@ const AboutMe = () => {
               );
             })}
           </ul>
-        </div>
-        <div className="about__wakatime">
-          <figure>
-            <embed src="https://wakatime.com/share/@6b62278f-1f06-4dce-90a0-e447c9e59880/799e7616-c258-4ed2-995b-d0bbf6248ff5.svg"></embed>
-          </figure>
         </div>
       </div>
     </>

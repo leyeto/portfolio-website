@@ -4,21 +4,21 @@ import "./Hero.scss";
 const axios = require("axios").default;
 
 const Hero = () => {
-  const [programmingQuote, setProgrammingQuote] = useState();
-  const [programmingQuoteAuthor, setProgrammingQuoteAuthor] = useState();
+  const [quotableQuote, setQuotableQuote] = useState();
+  const [quotableQuoteAuthor, setQuotableQuoteAuthor] = useState();
 
-  const API = "https://programming-quotes-api.herokuapp.com/quotes/random";
+  const API = "https://api.quotable.io/random";
 
-  const getProgrammingQuote = () => {
+  const getQuotableQuote = () => {
     axios.get(API).then((response) => {
       console.log(response.data);
-      setProgrammingQuote(response.data.en);
-      setProgrammingQuoteAuthor(response.data.author);
+      setQuotableQuote(response.data.content);
+      setQuotableQuoteAuthor(response.data.author);
     });
   };
 
   useEffect(() => {
-    getProgrammingQuote();
+    getQuotableQuote();
   }, []);
 
   return (
@@ -35,13 +35,15 @@ const Hero = () => {
           with new technologies to become a better developer. I am open to new
           opportunites and projects.
         </p>
-        <div className="hero__quote">
-          <h3 className="hero__quote-heading">Programming Quote</h3>
-          <p className="hero__quote-is">
-            {programmingQuote} <br />
-            by "{programmingQuoteAuthor}"
-          </p>
-        </div>
+        {quotableQuote && (
+          <div className="hero__quote">
+            <h3 className="hero__quote-heading">Quote from Quotable API</h3>
+            <p className="hero__quote-is">
+              {quotableQuote} <br />
+              by "{quotableQuoteAuthor}"
+            </p>
+          </div>
+        )}
       </div>
     </>
   );

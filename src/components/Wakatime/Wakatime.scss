@@ -1,0 +1,38 @@
+@use "../../../styles/colors" as c;
+@use "../../../styles/breakpoints" as b;
+.wakatime {
+  margin: auto;
+  width: min(100% - 6rem, 70rem);
+
+  &__activity {
+    &-fig {
+      position: relative;
+      background-color: c.$mine-white;
+      height: 15rem;
+      width: 100vw;
+
+      @include b.breakpoint("medium") {
+        width: 75rem;
+      }
+    }
+    &-em {
+      position: absolute;
+      left: -14rem;
+      transition: all 1s;
+      transform: scale(0.6);
+
+      @include b.breakpoint("medium") {
+        transform: scale(1);
+        left: 0;
+      }
+    }
+  }
+
+  &__divider {
+    margin: 3rem auto;
+  }
+
+  &__code-activity {
+    color: c.$mine-lightest-blue;
+  }
+}

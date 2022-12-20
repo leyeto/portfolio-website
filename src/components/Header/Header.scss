@@ -24,8 +24,6 @@
     max-width: 70vw;
   }
 
-  &__logo-div {
-  }
   &__logo {
     height: 6rem;
   }
@@ -58,10 +56,5 @@
       border-right: none;
       border-bottom: 3px solid green;
     }
-  }
-
-  &__work,
-  &__experience {
-    display: none;
   }
 }
