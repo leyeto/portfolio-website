@@ -1,0 +1,331 @@
+[33mcommit 17db8c39f13123bae5351fb8f7a75775de0925e9[m[33m ([m[1;31morigin/main[m[33m)[m
+Merge: 83ea794 8390b98
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Wed Oct 5 13:17:55 2022 +0100
+
+    Merge pull request #19 from leyeto/develop
+    
+    added wakatime embed to skill section
+
+[33mcommit 8390b98cfd9623c26bf14c77e06a5e51af236db4[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Tue Sep 27 21:30:52 2022 +0100
+
+    added wakatime embed to skill section
+
+[33mcommit 83ea7949f6b2f91f66de67cec54247e3958e99f2[m
+Merge: 4b402f7 ba66743
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Tue Sep 27 18:37:57 2022 +0100
+
+    Merge pull request #18 from leyeto/develop
+    
+    Develop
+
+[33mcommit ba667434d784135cf9aaf83fc72b9865ebf557b4[m
+Merge: 1e241f6 c4b8563
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Tue Sep 27 18:32:42 2022 +0100
+
+    Merge pull request #17 from leyeto/PP-07-projects-link-visibility-and-Header-alignment
+    
+    Pp 07 projects link visibility and header alignment
+
+[33mcommit c4b856368a204f6534fe01b50f61483722c5190f[m[33m ([m[1;31morigin/PP-07-projects-link-visibility-and-Header-alignment[m[33m, [m[1;32mPP-07-projects-link-visibility-and-Header-alignment[m[33m)[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Tue Sep 27 18:29:55 2022 +0100
+
+    changed header to one column for breakpoint small
+
+[33mcommit 2bbc430341b4127b7f2e7bfa35685a0ecf41e8c5[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Tue Sep 27 18:17:49 2022 +0100
+
+    added white background to project links
+
+[33mcommit 1e241f64fbb137d2962a34998c4737541fd6e38d[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Sep 19 15:54:47 2022 +0100
+
+    add another project to list
+
+[33mcommit 4b402f7089f5b390f7b6db5b0e9274c458e10c62[m
+Merge: 1c521c6 ad370f3
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Fri Sep 16 01:28:22 2022 +0100
+
+    Merge pull request #16 from leyeto/develop
+    
+    Develop
+
+[33mcommit ad370f3c31860952eb2fd4bb2ffc4036e6b04679[m
+Merge: d644d6e 6d968b0
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Fri Sep 16 01:24:50 2022 +0100
+
+    Merge pull request #15 from leyeto/PP-06-project-image-links
+    
+    Pp 06 project image links
+
+[33mcommit 6d968b06cedbaf8e209ff71b644f5deb27f7cade[m[33m ([m[1;31morigin/PP-06-project-image-links[m[33m, [m[1;32mPP-06-project-image-links[m[33m)[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Fri Sep 16 01:22:44 2022 +0100
+
+    icon changed
+
+[33mcommit de491f96ad837cacdf683ff8da448380e27a870e[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Fri Sep 16 01:05:28 2022 +0100
+
+    fixed skills rows
+
+[33mcommit 36a1227f3efd94da8f8b82a56d11695031587cdf[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Fri Sep 16 00:52:59 2022 +0100
+
+    sorted out link images
+
+[33mcommit d644d6ed1405566c0911c80a9b4dce9f58eb0f22[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Thu Sep 15 16:31:54 2022 +0100
+
+    trying to fix images for links
+
+[33mcommit b1bc70d91ef72005c18a080f214b779a8e4ced49[m
+Merge: b5cd6f7 91f99d9
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Mon Sep 12 11:15:55 2022 +0100
+
+    Merge pull request #14 from leyeto/PP-05-projects-section
+    
+    Pp 05 projects section
+
+[33mcommit 91f99d984bb54d78db48b4c39ef7c8e5ff8e3e3e[m[33m ([m[1;31morigin/PP-05-projects-section[m[33m, [m[1;32mPP-05-projects-section[m[33m)[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Sep 12 11:02:09 2022 +0100
+
+    added conditional to loom video in Project
+
+[33mcommit 7102d70fe7da10a3a593d8e86d192794c210e844[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Sep 12 10:25:15 2022 +0100
+
+    moved anime quote to bottom of Projects
+
+[33mcommit 71605c72e8624eceeda827b18baabfd70f5dd226[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Sep 12 09:23:30 2022 +0100
+
+    added Project component in Projects component
+
+[33mcommit 3c740d1c4b0706e429e10a6b3f3949a81e24ea45[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Sep 12 05:40:43 2022 +0100
+
+    added conditional for external link
+
+[33mcommit e3a35885d28d57e2c07c0c83c740903b2de6050a[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Sep 12 05:33:24 2022 +0100
+
+    created projects.js and rendering on Apps
+
+[33mcommit 0d78b0e4b245a5784d24bebe2cce812adf6d5f27[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Sat Sep 10 05:44:42 2022 +0100
+
+    projects.js created to store projects
+
+[33mcommit 0d5b8774e775735c0303ed4f77b01360a7aad267[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Sat Sep 10 05:44:30 2022 +0100
+
+    projects.js created to store projects
+
+[33mcommit b5cd6f700c64ef3092d1348f084d59e6d6e968a0[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Fri Sep 9 14:45:11 2022 +0100
+
+    minor typos corrected
+
+[33mcommit 164fcd477e0963bfc966b147af33d64f4539a312[m
+Merge: 0346444 35a2e4f
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Fri Sep 9 14:15:53 2022 +0100
+
+    Merge pull request #13 from leyeto/PP-04-m-recommendations
+    
+    Michael's recommendations implemented
+
+[33mcommit 35a2e4f44b5cc411afa61146031d1596d831105c[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Fri Sep 9 14:14:05 2022 +0100
+
+    Michael's recommendations implemented
+
+[33mcommit 1c521c63f83fd5c55664d7059361be85388ca93b[m
+Merge: ff12bb2 0346444
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Thu Aug 25 15:22:17 2022 +0100
+
+    Merge pull request #7 from leyeto/develop
+    
+    Develop
+
+[33mcommit 0346444982540e85e3519ef6852cb98e52f1828f[m
+Merge: b065aa9 a43e233
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Thu Aug 25 15:15:29 2022 +0100
+
+    Merge pull request #6 from leyeto/PP-03-change-skills-to-board
+    
+    graph changed to boards
+
+[33mcommit af3eb45bbd00d3bc15949ff39368cdff478c26ac[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Merge: 5007ec1 a43e233
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Thu Aug 25 15:13:25 2022 +0100
+
+    Merge branch 'develop'
+
+[33mcommit a43e233114cde70992118145fb949a2c8353c2a5[m[33m ([m[1;31morigin/PP-03-change-skills-to-board[m[33m, [m[1;32mPP-03-change-skills-to-board[m[33m)[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Thu Aug 25 15:12:24 2022 +0100
+
+    graph changed to boards
+
+[33mcommit b065aa96011a7e390317782637b246f6de80017c[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Thu Aug 25 13:10:30 2022 +0100
+
+    tried deleting some branches
+
+[33mcommit ff12bb2fb861f7268d436c46c5ffaaea1ed96775[m
+Merge: d9fe4c1 04b3eaa
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Tue Aug 23 14:02:40 2022 +0100
+
+    Merge pull request #5 from leyeto/develop
+    
+    Develop
+
+[33mcommit 5007ec1e9ae53eb806a4f9120f64d9ad6af4f808[m
+Merge: 0c6c962 04b3eaa
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Tue Aug 23 13:56:50 2022 +0100
+
+    Merge branch 'develop'
+
+[33mcommit 04b3eaaf0e88c29def40c99e8444c63020d5a839[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Tue Aug 23 13:53:30 2022 +0100
+
+    repostioned Responsive Designe skill
+
+[33mcommit 40a21d9a19cfdec4a34ff37f983e99ca8ba670c0[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Tue Aug 23 13:52:42 2022 +0100
+
+    repostioned Responsive Designe skill
+
+[33mcommit 0c6c9624467b7d9e7b8436312ccd56029c3a5577[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Tue Aug 23 11:00:54 2022 +0100
+
+    first Deployment
+
+[33mcommit b46653aa25a4f3250c16455fe312b3f88f764f76[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Aug 22 23:32:16 2022 +0100
+
+    untracked node_modules
+
+[33mcommit b8ab397fb16ea2f28a152af3061692783ad9ca12[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Aug 22 23:31:55 2022 +0100
+
+    untracked node_modules
+
+[33mcommit ab94ad00d19323b298f60c391efac7ece8981f7c[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Aug 22 22:47:13 2022 +0100
+
+    first deployment
+
+[33mcommit d9fe4c180cce8510ad0cf4f9f2eafd0e84bd7946[m
+Merge: e47aeaf 984c7de
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Mon Aug 22 22:16:31 2022 +0100
+
+    Merge pull request #4 from leyeto/develop
+    
+    added transistion to Header
+
+[33mcommit 984c7de70adcf421b167e71e7e10574f99da542b[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Aug 22 22:15:20 2022 +0100
+
+    added transistion to Header
+
+[33mcommit e47aeafcba28b47b217c767df897762ad6bbabbd[m
+Merge: 9213aca 2f0e763
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Mon Aug 22 22:14:19 2022 +0100
+
+    Merge pull request #3 from leyeto/develop
+    
+    Develop
+
+[33mcommit 2f0e7639dbfdcc10be17e353cb0f88506a83a3bb[m
+Merge: 239f1e4 5621baf
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Mon Aug 22 22:12:00 2022 +0100
+
+    Merge pull request #2 from leyeto/PP-02-contact-me
+    
+    Pp 02 contact me
+
+[33mcommit 5621bafe6d8b3e00a72683a0a4d65fb75eea89d3[m[33m ([m[1;31morigin/PP-02-contact-me[m[33m)[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Aug 22 22:11:12 2022 +0100
+
+    most of website done
+
+[33mcommit 79b82767912c047e611fd42326d3c7a8bc21fb3c[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Aug 22 13:19:46 2022 +0100
+
+    added some style to Resume button
+
+[33mcommit 239f1e4f4da610fba2b3ccd4f95ff5825f2d025c[m
+Merge: 9213aca 1e1433a
+Author: Adeleye Ifaturoti <49324434+leyeto@users.noreply.github.com>
+Date:   Mon Aug 22 12:27:21 2022 +0100
+
+    Merge pull request #1 from leyeto/PP-01-about-me
+    
+    Pp 01 about me
+
+[33mcommit 1e1433a35a03d852720a8f143b8a1193167344a3[m[33m ([m[1;31morigin/PP-01-about-me[m[33m)[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Mon Aug 22 12:16:50 2022 +0100
+
+    about done and breakpoint.scss created
+
+[33mcommit b672292c7b9f60259afbb34c129f3d1e84d7fa2a[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Sat Aug 20 16:13:26 2022 +0100
+
+    graph added to About me
+
+[33mcommit 9213aca182d097e82f9615cbeedd7bd0904a55b6[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Sat Aug 20 13:34:01 2022 +0100
+
+    first commit
+
+[33mcommit bfaa0f67c2cf12cbf86d2d098d331b54e02989fc[m
+Author: Adeleye Ifaturoti <adeleyeifaturoti@yahoo.com>
+Date:   Wed Aug 17 05:39:42 2022 +0100
+
+    Initialize project using Create React App
