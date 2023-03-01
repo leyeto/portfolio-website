@@ -11,7 +11,6 @@ const Hero = () => {
 
   const getQuotableQuote = () => {
     axios.get(API).then((response) => {
-      console.log(response.data);
       setQuotableQuote(response.data.content);
       setQuotableQuoteAuthor(response.data.author);
     });
