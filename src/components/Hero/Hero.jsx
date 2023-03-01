@@ -7,10 +7,12 @@ const Hero = () => {
   const [quotableQuote, setQuotableQuote] = useState();
   const [quotableQuoteAuthor, setQuotableQuoteAuthor] = useState();
 
-  const API = "https://api.quotable.io/random";
+  const API = process.env.REACT_APP_QUOTABLE_API;
+
+  console.log("process.env", process.env.REACT_APP_TITLE);
 
   const getQuotableQuote = () => {
-    axios.get(API).then((response) => {
+    axios.get("https://api.quotable.io/random").then((response) => {
       setQuotableQuote(response.data.content);
       setQuotableQuoteAuthor(response.data.author);
     });
