@@ -6,21 +6,25 @@ const axios = require("axios").default;
 const Hero = () => {
   const [quotableQuote, setQuotableQuote] = useState();
   const [quotableQuoteAuthor, setQuotableQuoteAuthor] = useState();
+  const [quoteIsSet, setQuoteIsSet] = useState(false);
 
   const API = process.env.REACT_APP_QUOTABLE_API;
 
   console.log("process.env", process.env.REACT_APP_TITLE);
 
   const getQuotableQuote = () => {
-    axios.get("https://api.quotable.io/random").then((response) => {
+    axios.get(API).then((response) => {
       setQuotableQuote(response.data.content);
       setQuotableQuoteAuthor(response.data.author);
+      if (response.data.content) {
+        setQuoteIsSet(true);
+      }
     });
   };
 
   useEffect(() => {
     getQuotableQuote();
-  }, []);
+  }, [quoteIsSet]);
 
   return (
     <>
