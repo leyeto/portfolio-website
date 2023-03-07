@@ -19,18 +19,30 @@ const AboutMeImage = () => {
   const openai = new OpenAIApi(configuration);
 
   const generateImage = async () => {
-    const response = await openai.createImage({
-      prompt: prompt,
-      n: 1,
-      size: "512x512",
-    });
-    setAiImageUrl(response.data.data[0].url);
-    if (
-      AiImageUrl.length > 0 ||
-      AiImageUrl !== null ||
-      AiImageUrl !== undefined
-    ) {
-      setAiIsGenerated(true);
+    try {
+      const response = await openai.createImage({
+        prompt: prompt,
+        n: 1,
+        size: "512x512",
+      });
+
+      setAiImageUrl(response.data.data[0].url);
+      console.log(response.data.data[0].url);
+      if (
+        AiImageUrl.length > 0 ||
+        AiImageUrl !== null ||
+        AiImageUrl !== undefined
+      ) {
+        setAiIsGenerated(true);
+      }
+
+      if (!response.ok) {
+        throw new Error(`HTTP error ${response.status}`);
+      }
+      const data = await response.json();
+      console.log(data);
+    } catch (error) {
+      console.log("Error:", error);
     }
   };
 
