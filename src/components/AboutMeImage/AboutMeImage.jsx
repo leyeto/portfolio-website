@@ -47,14 +47,12 @@ const AboutMeImage = () => {
   return (
     <div className="about__picture">
       <img src={imageUrl} alt="headshot.jpg" className="about__picture-img" />
-      <form>
+      <form onSubmit={submitHandler}>
         <label>
           Want to see something else?
           <input type="text" onChange={(e) => setPrompt(e.target.value)} />
         </label>
-        <button type="submit" onSubmit={(e) => submitHandler(e)}>
-          Submit
-        </button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
