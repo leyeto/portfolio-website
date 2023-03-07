@@ -14,7 +14,6 @@ const Projects = () => {
 
   const getAnime = () => {
     axios.get(Anime_API).then((response) => {
-      console.log(response.data);
       setAnimeQuote(response.data.quote);
       setAnimeQuoteAnime(response.data.anime);
       setAnimeQuoteCharacter(response.data.character);

@@ -6,14 +6,19 @@ const axios = require("axios").default;
 const Hero = () => {
   const [quotableQuote, setQuotableQuote] = useState();
   const [quotableQuoteAuthor, setQuotableQuoteAuthor] = useState();
+  const [quoteIsSet, setQuoteIsSet] = useState(false);
 
   const API = "https://api.quotable.io/random";
 
   const getQuotableQuote = () => {
     axios.get(API).then((response) => {
-      console.log(response.data);
       setQuotableQuote(response.data.content);
       setQuotableQuoteAuthor(response.data.author);
+      if (response.data.content) {
+        setQuoteIsSet(true);
+      } else {
+        setQuoteIsSet(false);
+      }
     });
   };
 
@@ -35,7 +40,7 @@ const Hero = () => {
           with new technologies to become a better developer. I am open to new
           opportunites and projects.
         </p>
-        {quotableQuote && (
+        {quoteIsSet && (
           <div className="hero__quote">
             <h3 className="hero__quote-heading">Quote from Quotable API</h3>
             <p className="hero__quote-is">
