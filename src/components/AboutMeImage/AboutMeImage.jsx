@@ -1,10 +1,59 @@
 import myHeadShot from "../../assets/pictures/headshot.jpg";
+import { useState } from "react";
 import "./AboutMeImage.scss";
+const { Configuration, OpenAIApi } = require("openai");
 
 const AboutMeImage = () => {
+  const [prompt, setPrompt] = useState("");
+  const [AiImageUrl, setAiImageUrl] = useState("");
+  const [AiIsGenerated, setAiIsGenerated] = useState(false);
+
+  let imageUrl = myHeadShot;
+
+  const configuration = new Configuration({
+    apiKey: "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",
+  });
+
+  const openai = new OpenAIApi(configuration);
+
+  const generateImage = async () => {
+    const response = await openai.createImage({
+      prompt: prompt,
+      n: 1,
+      size: "512x512",
+    });
+    setAiImageUrl(response.data.data[0].url);
+    if (
+      AiImageUrl.length > 0 ||
+      AiImageUrl !== null ||
+      AiImageUrl !== undefined
+    ) {
+      setAiIsGenerated(true);
+    }
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    generateImage();
+  };
+  if (AiIsGenerated) {
+    imageUrl = AiImageUrl;
+  } else {
+    imageUrl = myHeadShot;
+  }
+
   return (
     <div className="about__picture">
-      <img src={myHeadShot} alt="headshot.jpg" className="about__picture-img" />
+      <img src={imageUrl} alt="headshot.jpg" className="about__picture-img" />
+      <form>
+        <label>
+          Want to see something else?
+          <input type="text" onChange={(e) => setPrompt(e.target.value)} />
+        </label>
+        <button type="submit" onSubmit={(e) => submitHandler(e)}>
+          Submit
+        </button>
+      </form>
     </div>
   );
 };
