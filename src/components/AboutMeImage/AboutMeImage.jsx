@@ -8,10 +8,12 @@ const AboutMeImage = () => {
   const [AiImageUrl, setAiImageUrl] = useState("");
   const [AiIsGenerated, setAiIsGenerated] = useState(false);
 
+  const OPENAI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
+
   let imageUrl = myHeadShot;
 
   const configuration = new Configuration({
-    apiKey: "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",
+    apiKey: OPENAI_API_KEY,
   });
 
   const openai = new OpenAIApi(configuration);
