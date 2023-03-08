@@ -1,6 +1,33 @@
+@use "../../../styles/colors" as c;
 .about {
   margin: 20vh auto;
   width: min(100% - 6rem, 70rem);
+
+  &__form {
+    display: none;
+    margin: 1rem;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      border-radius: 1rem;
+      border: 1px solid c.$mine-lightest-blue;
+      margin: 1rem;
+      padding: 0.5rem;
+    }
+  }
+
+  &__change-pic {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+  }
+
+  &__submit {
+    cursor: pointer;
+    padding: 0.7rem;
+    background-color: c.$mine-light-blue;
+  }
 
   &__picture {
     display: flex;

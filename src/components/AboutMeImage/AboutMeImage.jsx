@@ -21,13 +21,13 @@ const AboutMeImage = () => {
   const generateImage = async () => {
     try {
       const response = await openai.createImage({
-        prompt: prompt,
+        prompt: prompt || "a white siamese cat",
         n: 1,
         size: "512x512",
       });
 
       setAiImageUrl(response.data.data[0].url);
-      console.log(response.data.data[0].url);
+      console.log("response Data: ", AiImageUrl);
       if (
         AiImageUrl.length > 0 ||
         AiImageUrl !== null ||
@@ -42,7 +42,12 @@ const AboutMeImage = () => {
       const data = await response.json();
       console.log(data);
     } catch (error) {
-      console.log("Error:", error);
+      if (error.response) {
+        console.log(error.response.status);
+        console.log(error.response.data);
+      } else {
+        console.log(error.message);
+      }
     }
   };
 
@@ -57,16 +62,24 @@ const AboutMeImage = () => {
   }
 
   return (
-    <div className="about__picture">
-      <img src={imageUrl} alt="headshot.jpg" className="about__picture-img" />
-      <form onSubmit={submitHandler}>
-        <label>
+    <>
+      <div className="about__picture">
+        <img src={imageUrl} alt="headshot.jpg" className="about__picture-img" />
+      </div>
+      <form className="about__form" onSubmit={submitHandler}>
+        <label className="about__change-pic">
           Want to see something else?
-          <input type="text" onChange={(e) => setPrompt(e.target.value)} />
+          <input
+            placeholder="Enter Text here"
+            type="text"
+            onChange={(e) => setPrompt(e.target.value)}
+          />
         </label>
-        <button type="submit">Submit</button>
+        <button className="about__submit" type="submit">
+          Submit
+        </button>
       </form>
-    </div>
+    </>
   );
 };
 
