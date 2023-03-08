@@ -10,7 +10,7 @@ const Projects = () => {
   const [animeQuoteAnime, setAnimeQuoteAnime] = useState();
   const [animeQuoteCharacter, setAnimeQuoteCharacter] = useState();
 
-  const Anime_API = "https://animechan.vercel.app/api/random";
+  const Anime_API = process.env.REACT_APP_ANIME_API;
 
   const getAnime = () => {
     axios.get(Anime_API).then((response) => {
