@@ -1,70 +1,42 @@
 import myHeadShot from "../../assets/pictures/headshot.jpg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import "./AboutMeImage.scss";
-const { Configuration, OpenAIApi } = require("openai");
 
 const AboutMeImage = () => {
+  const [pictures, setPictures] = useState("");
+  const [selectedPicUrl, setSelectedPicUrl] = useState(myHeadShot);
   const [prompt, setPrompt] = useState("");
-  const [AiImageUrl, setAiImageUrl] = useState("");
-  const [AiIsGenerated, setAiIsGenerated] = useState(false);
 
-  const OPENAI_API_KEY = process.env.REACT_APP_OPENAI_API_KEY;
+  const ACCESS_KEY = process.env.REACT_APP_UNSPLASH_ACCESS_KEY;
 
-  let imageUrl = myHeadShot;
-
-  const configuration = new Configuration({
-    apiKey: OPENAI_API_KEY,
-  });
-
-  const openai = new OpenAIApi(configuration);
-
-  const generateImage = async () => {
-    try {
-      const response = await openai.createImage({
-        prompt: prompt || "a white siamese cat",
-        n: 1,
-        size: "512x512",
-      });
-
-      setAiImageUrl(response.data.data[0].url);
-      console.log("response Data: ", AiImageUrl);
-      if (
-        AiImageUrl.length > 0 ||
-        AiImageUrl !== null ||
-        AiImageUrl !== undefined
-      ) {
-        setAiIsGenerated(true);
-      }
-
-      if (!response.ok) {
-        throw new Error(`HTTP error ${response.status}`);
-      }
-      const data = await response.json();
-      console.log(data);
-    } catch (error) {
-      if (error.response) {
-        console.log(error.response.status);
-        console.log(error.response.data);
-      } else {
-        console.log(error.message);
-      }
-    }
+  const fetchPhotosByQuery = (query) => {
+    axios
+      .get(
+        `https://api.unsplash.com/search/photos?client_id=${ACCESS_KEY}&query=${query}`
+      )
+      .then((response) => response.data)
+      .then((data) => setPictures(data.results))
+      .catch((error) => console.log("Error on fetchPhotosByQuery: ", error));
   };
+
+  // useEffect(() => fetchPhotosByQuery("cat"), [pictures]);
 
   const submitHandler = (e) => {
     e.preventDefault();
-    generateImage();
+    fetchPhotosByQuery(prompt);
+    console.log("Reached");
+    setSelectedPicUrl(pictures[0].urls.small);
   };
-  if (AiIsGenerated) {
-    imageUrl = AiImageUrl;
-  } else {
-    imageUrl = myHeadShot;
-  }
 
   return (
     <>
       <div className="about__picture">
-        <img src={imageUrl} alt="headshot.jpg" className="about__picture-img" />
+        <img
+          src={selectedPicUrl}
+          alt="headshot.jpg"
+          className="about__picture-img"
+        />
       </div>
       <form className="about__form" onSubmit={submitHandler}>
         <label className="about__change-pic">

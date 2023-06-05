@@ -44,7 +44,6 @@ const AboutMe = () => {
             </div>
           </div>
           <AboutMeImage />
-          <AboutMeImageUnsplash />
         </div>
 
         <div className="about__graph">
