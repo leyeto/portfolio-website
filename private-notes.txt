@@ -1,0 +1,5 @@
+unsplash-sandbox = https://codesandbox.io/s/image-gallery-m4ucx?file=/src/Api.js
+
+unsplash-github = https://github.com/unsplash/unsplash-js#installation
+
+cpanel-push = https://ridbay.medium.com/how-to-deploy-your-github-repositories-to-cpanel-the-easier-way-16ec6e6cc7ee
