@@ -4,7 +4,6 @@ import fullStack from "../../assets/documents/Adeleye_Ifaturoti_Full_Stack_React
 import "./Header.scss";
 
 const Header = () => {
-  console.log("__dirname: ", `${__dirname + logoImg}`);
   return (
     <>
       <header>
