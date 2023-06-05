@@ -2,6 +2,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 import skills from "../../data/skills";
 import "./AboutMe.scss";
 import AboutMeImage from "../AboutMeImage/AboutMeImage";
+import { AboutMeImageUnsplash } from "../AboutMeImageUnsplash/AboutMeImageUnsplash";
 
 const AboutMe = () => {
   return (
@@ -43,6 +44,7 @@ const AboutMe = () => {
             </div>
           </div>
           <AboutMeImage />
+          <AboutMeImageUnsplash />
         </div>
 
         <div className="about__graph">

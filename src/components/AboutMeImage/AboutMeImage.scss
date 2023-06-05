@@ -4,7 +4,7 @@
   width: min(100% - 6rem, 70rem);
 
   &__form {
-    display: none;
+    display: flex;
     margin: 1rem;
     flex-direction: column;
     align-items: center;
