@@ -32,7 +32,6 @@ const AboutMeImage = () => {
     e.preventDefault();
     fetchPhotosByQuery(prompt);
     setPrompt("");
-    console.log("Reached");
   };
 
   return (
