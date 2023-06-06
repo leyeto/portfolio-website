@@ -16,17 +16,23 @@ const AboutMeImage = () => {
         `https://api.unsplash.com/search/photos?client_id=${ACCESS_KEY}&query=${query}`
       )
       .then((response) => response.data)
-      .then((data) => setPictures(data.results))
+      .then((data) => {
+        if (data.results.length > 0) setPictures(data.results);
+      })
       .catch((error) => console.log("Error on fetchPhotosByQuery: ", error));
   };
 
-  // useEffect(() => fetchPhotosByQuery("cat"), [pictures]);
+  useEffect(() => {
+    if (pictures) {
+      setSelectedPicUrl(pictures[0].urls.small);
+    }
+  }, [pictures]);
 
   const submitHandler = (e) => {
     e.preventDefault();
     fetchPhotosByQuery(prompt);
+    setPrompt("");
     console.log("Reached");
-    setSelectedPicUrl(pictures[0].urls.small);
   };
 
   return (
@@ -42,7 +48,9 @@ const AboutMeImage = () => {
         <label className="about__change-pic">
           Want to see something else?
           <input
+            className="about__change-textbox"
             placeholder="Enter Text here"
+            value={prompt}
             type="text"
             onChange={(e) => setPrompt(e.target.value)}
           />
