@@ -8,7 +8,7 @@ const Hero = () => {
   const [quotableQuoteAuthor, setQuotableQuoteAuthor] = useState();
   const [quoteIsSet, setQuoteIsSet] = useState(false);
 
-  const API = "https://api.quotable.io/random";
+  const API = process.env.REACT_APP_QUOTABLE_API;
 
   const getQuotableQuote = () => {
     axios.get(API).then((response) => {
@@ -36,9 +36,12 @@ const Hero = () => {
         </h1>
         <p className="hero__statement">
           I am a software engineer that specializes in designing and building
-          websites. I am currently focused on expanding my skills and working
-          with new technologies to become a better developer. I am open to new
-          opportunites and projects.
+          websites. I am particularly interest in freelancing and work
+          opportunites, if you have a project you want a developer for hit the{" "}
+          <a href="#contact-me" className="hero__contact-link">
+            contact
+          </a>{" "}
+          button.
         </p>
         {quoteIsSet && (
           <div className="hero__quote">

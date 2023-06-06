@@ -1,7 +1,7 @@
-import myHeadShot from "../../assets/pictures/headshot.jpg";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 import skills from "../../data/skills";
 import "./AboutMe.scss";
+import AboutMeImage from "../AboutMeImage/AboutMeImage";
 
 const AboutMe = () => {
   return (
@@ -42,13 +42,7 @@ const AboutMe = () => {
               </p>
             </div>
           </div>
-          <div className="about__picture">
-            <img
-              src={myHeadShot}
-              alt="headshot.jpg"
-              className="about__picture-img"
-            />
-          </div>
+          <AboutMeImage />
         </div>
 
         <div className="about__graph">
