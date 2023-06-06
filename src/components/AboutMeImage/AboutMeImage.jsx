@@ -17,9 +17,29 @@ const AboutMeImage = () => {
       )
       .then((response) => response.data)
       .then((data) => {
-        if (data.results.length > 0) setPictures(data.results);
+        if (data.results.length > 0) {
+          setPictures(data.results);
+          return data.results;
+        } else {
+          throw Error("data.result.length < 1. No data recieved");
+        }
       })
-      .catch((error) => console.log("Error on fetchPhotosByQuery: ", error));
+      .then((arrayOfPictures) =>
+        arrayOfPictures.sort((a, b) => b.likes - a.likes)
+      )
+      .then((sortedArray) => setPictures(sortedArray))
+      .catch((error) => {
+        if (error.response) {
+          console.log(error.response.data);
+          console.log(error.response.status);
+          console.log(error.response.headers);
+        } else if (error.request) {
+          console.log(error.request);
+        } else {
+          console.log("Error", error.message);
+        }
+        console.log(error.config);
+      });
   };
 
   useEffect(() => {
@@ -34,6 +54,11 @@ const AboutMeImage = () => {
     setPrompt("");
   };
 
+  const resetPicture = () => {
+    console.log("Reset clicked");
+    setSelectedPicUrl(myHeadShot);
+  };
+
   return (
     <>
       <div className="about__picture">
@@ -45,7 +70,7 @@ const AboutMeImage = () => {
       </div>
       <form className="about__form" onSubmit={submitHandler}>
         <label className="about__change-pic">
-          Want to see something else?
+          See something else (Unsplash API)?
           <input
             className="about__change-textbox"
             placeholder="Enter Text here"
@@ -57,6 +82,12 @@ const AboutMeImage = () => {
         <button className="about__submit" type="submit">
           Submit
         </button>
+        <input
+          type="button"
+          className="about__reset"
+          value="Reset"
+          onClick={() => resetPicture()}
+        />
       </form>
     </>
   );
