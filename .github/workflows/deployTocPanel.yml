@@ -30,10 +30,17 @@ jobs:
         run: |
           npm install
           npm run build
-          git reset --hard
+          # git reset --hard
+
+      - name: List output files
+        run: find build/ -print
+
       - name: 📂 Sync folders and files to the server
         uses: SamKirkland/FTP-Deploy-Action@4.3.3
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: build/
+          server-dir: public_html/
+          dry-run: true
