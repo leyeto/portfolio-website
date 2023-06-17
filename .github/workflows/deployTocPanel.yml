@@ -1,7 +1,7 @@
 name: 🚀 Deploy File to cPanel
 on:
   push:
-    branches: [main, develop]
+    branches: [main, develop, P-18-sort-out-automatic-deployment-to-cpanel]
 jobs:
   FTP-Deploy-Action:
     name: 🎉 Deploy
@@ -42,4 +42,4 @@ jobs:
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: build/
-          server-dir: public_html/
+          server-dir: ./public_html/
