@@ -1,7 +1,7 @@
 name: 🚀 Deploy File to cPanel
 on:
   push:
-    branches: [main, develop, P-18-sort-out-automatic-deployment-to-cpanel]
+    branches: [main, develop]
 jobs:
   FTP-Deploy-Action:
     name: 🎉 Deploy
