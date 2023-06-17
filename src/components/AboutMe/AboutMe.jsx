@@ -12,12 +12,11 @@ const AboutMe = () => {
             <h1 className="about__heading">About Me</h1>
             <div className="about__first-p">
               <p>
-                Hi! My name is Adeleye prefer to be called Leye pronounced
-                "Ley-year". I have degrees in Computer Engineering and
-                Information Technology and previously worked in the NHS in an
-                administrative capacity. I've changed careers to Software
-                Engineering due to my passion for programming and building
-                solutions.
+                Hi! My name is Adeleye prefer to be called Leye. I have degrees
+                in Computer Engineering and Information Technology and
+                previously worked in the NHS in an administrative capacity. I've
+                changed careers to Software Engineering due to my passion for
+                programming and building solutions.
               </p>
               <p>
                 I attended and graduated from BrainStation's Software
