@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className="about" id="about">
         <div className="about__main">
           <div className="about__text">
-            <h1 className="about__heading">About Me (CPanel Updates)</h1>
+            <h1 className="about__heading">About Me</h1>
             <div className="about__first-p">
               <p>
                 Hi! My name is Adeleye prefer to be called Leye pronounced
