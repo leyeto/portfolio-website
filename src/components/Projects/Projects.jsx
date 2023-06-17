@@ -10,17 +10,16 @@ const Projects = () => {
   const [animeQuoteAnime, setAnimeQuoteAnime] = useState();
   const [animeQuoteCharacter, setAnimeQuoteCharacter] = useState();
 
-  const Anime_API = process.env.REACT_APP_ANIME_API;
-
-  const getAnime = () => {
-    axios.get(Anime_API).then((response) => {
-      setAnimeQuote(response.data.quote);
-      setAnimeQuoteAnime(response.data.anime);
-      setAnimeQuoteCharacter(response.data.character);
-    });
-  };
-
   useEffect(() => {
+    const Anime_API = process.env.REACT_APP_ANIME_API;
+
+    const getAnime = () => {
+      axios.get(Anime_API).then((response) => {
+        setAnimeQuote(response.data.quote);
+        setAnimeQuoteAnime(response.data.anime);
+        setAnimeQuoteCharacter(response.data.character);
+      });
+    };
     getAnime();
   }, []);
   return (
