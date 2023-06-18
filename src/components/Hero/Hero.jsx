@@ -8,21 +8,22 @@ const Hero = () => {
   const [quotableQuoteAuthor, setQuotableQuoteAuthor] = useState();
   const [quoteIsSet, setQuoteIsSet] = useState(false);
 
-  const API = process.env.REACT_APP_QUOTABLE_API;
-
-  const getQuotableQuote = () => {
-    axios.get(API).then((response) => {
-      setQuotableQuote(response.data.content);
-      setQuotableQuoteAuthor(response.data.author);
-      if (response.data.content) {
-        setQuoteIsSet(true);
-      } else {
-        setQuoteIsSet(false);
-      }
-    });
-  };
-
   useEffect(() => {
+    const API =
+      "https://api.quotable.io/random" || process.env.REACT_APP_QUOTABLE_API;
+
+    const getQuotableQuote = () => {
+      axios.get(API).then((response) => {
+        if (response.data.content) {
+          setQuoteIsSet(true);
+        } else {
+          setQuoteIsSet(false);
+        }
+        setQuotableQuote(response.data.content);
+        setQuotableQuoteAuthor(response.data.author);
+      });
+    };
+
     getQuotableQuote();
   }, []);
 
