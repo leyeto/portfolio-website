@@ -9,7 +9,9 @@ const Hero = () => {
   const [quoteIsSet, setQuoteIsSet] = useState(false);
 
   useEffect(() => {
-    const API = process.env.REACT_APP_QUOTABLE_API;
+    const API =
+      "https://api.quotable.io/random" || process.env.REACT_APP_QUOTABLE_API;
+
     const getQuotableQuote = () => {
       axios.get(API).then((response) => {
         setQuotableQuote(response.data.content);
@@ -23,7 +25,7 @@ const Hero = () => {
     };
 
     getQuotableQuote();
-  }, [quoteIsSet]);
+  }, []);
 
   return (
     <>
