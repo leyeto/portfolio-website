@@ -14,13 +14,13 @@ const Hero = () => {
 
     const getQuotableQuote = () => {
       axios.get(API).then((response) => {
-        setQuotableQuote(response.data.content);
-        setQuotableQuoteAuthor(response.data.author);
         if (response.data.content) {
           setQuoteIsSet(true);
         } else {
           setQuoteIsSet(false);
         }
+        setQuotableQuote(response.data.content);
+        setQuotableQuoteAuthor(response.data.author);
       });
     };
 
