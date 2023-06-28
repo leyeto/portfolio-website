@@ -1,7 +1,7 @@
 name: 🚀 Deploy File to cPanel
 on:
   push:
-    branches: [main, develop]
+    branches: [main]
 jobs:
   FTP-Deploy-Action:
     name: 🎉 Deploy
