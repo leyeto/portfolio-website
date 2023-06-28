@@ -1,4 +1,3 @@
-import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend } from "recharts";
 import skills from "../../data/skills";
 import "./AboutMe.scss";
 import AboutMeImage from "../AboutMeImage/AboutMeImage";
@@ -45,25 +44,6 @@ const AboutMe = () => {
           <AboutMeImage />
         </div>
 
-        <div className="about__graph">
-          <BarChart width={750} height={300} data={skills}>
-            <XAxis dataKey="skill" tick={{ fill: "white" }} fontSize={12} />
-            <YAxis
-              domain={[0, 100]}
-              tick={{ fill: "white" }}
-              tickSize={6}
-              label={{ value: "Percentage", angle: -90 }}
-            />
-            <Tooltip />
-            <Legend />
-            <Bar
-              dataKey="percentage"
-              fill="#508991"
-              barSize={40}
-              background={{ fill: "#eee" }}
-            />
-          </BarChart>
-        </div>
         <div id="skills" className="about__skills">
           <h2 className="about__skills-heading">Skills</h2>
           <ul className="about__skills-list">
