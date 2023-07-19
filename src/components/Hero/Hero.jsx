@@ -30,15 +30,13 @@ const Hero = () => {
   return (
     <>
       <div className="hero">
-        <p className="hero__sub">Hello, my name is </p>
-        <h1 className="hero__main-name">Adeleye Ifaturoti.</h1>
-        <h1 className="hero__main-mission">
-          I bring dreams to life on the web.
-        </h1>
         <p className="hero__statement">
-          I am a software engineer that specializes in designing and building
-          websites. I am particularly interest in freelancing and work
-          opportunites, if you have a project you want a developer for hit the{" "}
+          As a{" "}
+          <span className="hero__highlight">Full Stack Software Developer</span>
+          , I specialize in crafting and developing digital products. I am
+          currently available for new opportunities and freelancing work. If you
+          have a project that needs a skilled developer, feel free to reach out
+          to me via the{" "}
           <a href="#contact-me" className="hero__contact-link">
             contact
           </a>{" "}
