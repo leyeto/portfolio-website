@@ -11,33 +11,23 @@ const AboutMe = () => {
             <h1 className="about__heading">About Me</h1>
             <div className="about__first-p">
               <p>
-                Hi! My name is Adeleye prefer to be called Leye pronounced
-                "Ley-year". I have degrees in Computer Engineering and
-                Information Technology and previously worked in the NHS in an
-                administrative capacity. I've changed careers to Software
-                Engineering due to my passion for programming and building
-                solutions.
+                Friends call me, Leye. I have a diverse background in IT
+                Support, NHS, customer service, Computer Engineering degree and
+                Information Technology degree; this enriched my journey into
+                software development.
               </p>
               <p>
-                I attended and graduated from BrainStation's Software
-                Engineering bootcamp in London in 2022 to help achieve this
-                goal. I worked with a number of technologies and worked on
-                various projects while at BrainStation.
+                My expertise lies in crafting remarkable digital solutions. With
+                a deep understanding of modern web development technologies like
+                React, ExpressJs, Node and others, I consistently deliver
+                exceptional results.
               </p>
               <p>
-                As part of the programme we were assigned a challenge and given
-                24 hours challenge from start to finished product. The challenge
-                was to find a solution to the Global Warming crisis. My team
-                consisted of 2 Developers (including myself), 2 UX Designers and
-                1 Data Scientist. Our solution was FixIT, a mobile application
-                that connects people that have old, worn or out of fashion
-                clothes or furniture to people that can restore or rejuvenate
-                these items. We produced an awesome product and won the
-                competition.
-              </p>
-              <p>
-                I am best suited for junior developer roles preferrably React,
-                Javascript, Typescript, Node, Java, Spring and many more.
+                Whether you need a customized website, an intuitive mobile
+                application, or a sophisticated web application, I have the
+                skills to bring your ideas to life. I provide unparalleled
+                service and outstanding outcomes for all your web development
+                needs.
               </p>
             </div>
           </div>
