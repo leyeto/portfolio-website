@@ -5,7 +5,8 @@ import "./LoomPlayer.scss";
 const LoomPlayer = () => {
   return (
     <div className="loom-player">
-      <ReactPlayer url={Video} controls={true} />
+      <h2>Main Project</h2>
+      <ReactPlayer url={Video} controls={true} volume={0} />
     </div>
   );
 };

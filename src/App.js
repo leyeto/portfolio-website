@@ -14,8 +14,8 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <LoomPlayer />
         <AboutMe />
+        <LoomPlayer />
         <Wakatime />
         <Projects />
         <ContactMe />
