@@ -2,8 +2,8 @@
 .hero {
   margin: 10vh auto 20vh;
   width: min(100% - 6rem, 70rem);
-  &__sub {
-    color: c.$mine-lightest-blue;
+  &__highlight {
+    color: c.$mine-white;
   }
   &__main-name {
     color: c.$mine-white;

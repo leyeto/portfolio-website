@@ -1,6 +1,7 @@
 import projects from "../../data/projects.js";
 import Project from "../Project/Project";
 import { useState, useEffect } from "react";
+import LoomPlayer from "../LoomPlayer/LoomPlayer";
 import "./Projects.scss";
 
 const axios = require("axios").default;
@@ -26,6 +27,7 @@ const Projects = () => {
     <section>
       <div id="projects" className="projects">
         <h1 className="projects__heading">Projects</h1>
+        <LoomPlayer />
         {projects.map((project, i) => {
           return <Project key={i} project={project} />;
         })}
