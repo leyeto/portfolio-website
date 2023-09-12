@@ -9,12 +9,11 @@ const AboutMeImage = () => {
   const [prompt, setPrompt] = useState("");
 
   const ACCESS_KEY = process.env.REACT_APP_UNSPLASH_ACCESS_KEY;
+  const BASE_URL = "https://api.unsplash.com";
 
   const fetchPhotosByQuery = (query) => {
     axios
-      .get(
-        `https://api.unsplash.com/search/photos?client_id=${ACCESS_KEY}&query=${query}`
-      )
+      .get(`${BASE_URL}/search/photos?client_id=${ACCESS_KEY}&query=${query}`)
       .then((response) => response.data)
       .then((data) => {
         if (data.results.length > 0) {
