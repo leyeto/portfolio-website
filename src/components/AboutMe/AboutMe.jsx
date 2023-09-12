@@ -11,10 +11,9 @@ const AboutMe = () => {
             <h1 className="about__heading">About Me</h1>
             <div className="about__first-p">
               <p>
-                Friends call me, Leye. I have a diverse background in IT
-                Support, NHS, customer service, Computer Engineering degree and
-                Information Technology degree; this enriched my journey into
-                software development.
+                I have a diverse background in IT Support, NHS, customer
+                service, Computer Engineering degree and Information Technology
+                degree; this enriched my journey into software development.
               </p>
               <p>
                 My expertise lies in crafting remarkable digital solutions. With
