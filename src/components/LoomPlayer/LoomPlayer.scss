@@ -1,0 +1,10 @@
+@use "../../../styles/breakpoints" as b;
+
+.loom-player {
+  margin: 10vh auto 20vh;
+  width: min(100% - 6rem, 70rem);
+
+  @include b.breakpoint-down("small") {
+    width: 100%;
+  }
+}

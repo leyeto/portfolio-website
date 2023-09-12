@@ -42,21 +42,7 @@ const projects = [
       exLink: "https://adeleye-trivia.s3.eu-west-2.amazonaws.com/index.html",
     },
   },
-  // {
-  //   project: "FixIT",
-  //   about:
-  //     "As part of the programme we were assigned a challenge and given 24 hours challenge from start to finished product. The challenge was to find a solution to the Global Warming crisis. My team consisted of 2 Developers (including myself), 2 UX Designers and 1 Data Scientist. Our solution was FixIT, a mobile application that connects people that have old, worn or out of fashion clothes or furniture to people that can restore or rejuvenate these items. We produced an awesome product and won the competition. Joseph Shandley and I were the Web Developers of this project, he is an awesome developer, feel free to check hime out on LinkedIn",
-  //   techs: ["React", "RestAPIs", "VS", "React Hooks, Express"],
-  //   img: {
-  //     imgLink: `${triviaImg}`,
-  //     alt: "FixIT picture",
-  //   },
-  //   links: {
-  //     github: "https://github.com/leyeto/trivia-gam",
-  //     loom: "",
-  //     exLink: "https://adeleye-trivia.s3.eu-west-2.amazonaws.com/index.html",
-  //   },
-  // },
+
   {
     project: "Brain PingPong",
     about:
