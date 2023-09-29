@@ -14,7 +14,7 @@ function App() {
       <main>
         <Hero />
         <AboutMe />
-        <Wakatime />
+        {/* <Wakatime /> */}
         <Projects />
         <ContactMe />
       </main>

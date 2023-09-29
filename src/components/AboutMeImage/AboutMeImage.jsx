@@ -67,7 +67,7 @@ const AboutMeImage = () => {
           className="about__picture-img"
         />
       </div>
-      <form className="about__form" onSubmit={submitHandler}>
+      {/* <form className="about__form" onSubmit={submitHandler}>
         <label className="about__change-pic">
           See something else (Unsplash API)?
           <input
@@ -87,7 +87,7 @@ const AboutMeImage = () => {
           value="Reset"
           onClick={() => resetPicture()}
         />
-      </form>
+      </form> */}
     </>
   );
 };
