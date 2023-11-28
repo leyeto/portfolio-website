@@ -15,18 +15,26 @@ const Projects = () => {
     const Anime_API = process.env.REACT_APP_ANIME_API;
 
     const getAnime = () => {
-      axios.get(Anime_API).then((response) => {
-        setAnimeQuote(response.data.quote);
-        setAnimeQuoteAnime(response.data.anime);
-        setAnimeQuoteCharacter(response.data.character);
-      });
+      axios
+        .get(Anime_API, {
+          headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+          },
+        })
+        .then((response) => {
+          setAnimeQuote(response.data.quote);
+          setAnimeQuoteAnime(response.data.anime);
+          setAnimeQuoteCharacter(response.data.character);
+        });
     };
-    getAnime();
+    // getAnime();
   }, []);
   return (
     <section>
       <div id="projects" className="projects">
         <h1 className="projects__heading">Projects</h1>
+        {/* Might want to add this in future */}
         {/* <LoomPlayer /> */}
         {projects.map((project, i) => {
           return <Project key={i} project={project} />;
