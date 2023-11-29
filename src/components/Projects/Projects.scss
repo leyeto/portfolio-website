@@ -7,11 +7,27 @@
     color: c.$mine-lightest-blue;
   }
 
-  &__anime-quote {
-    margin: 2rem 0;
-  }
+  &__jclear {
+    &-quote {
+      margin: 2rem 0;
+    }
 
-  &__anime-heading {
-    color: c.$mine-lightest-blue;
+    &-heading {
+      color: c.$mine-lightest-blue;
+    }
+
+    &-source {
+      margin: 2rem 0;
+      font-size: medium;
+
+      a {
+        text-decoration: underline;
+        font-style: italic;
+
+        &:hover {
+          color: c.$mine-light-blue;
+        }
+      }
+    }
   }
 }
