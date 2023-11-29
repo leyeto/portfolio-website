@@ -26,10 +26,10 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
 
       - name: 🔨 Install Dependencies
-        if: steps.npm-cache.outputs.cache-hit != 'true'
+        # if: steps.npm-cache.outputs.cache-hit != 'true'
         run: |
           npm install
-          CI = false npm run build
+          CI=false npm run build
           # git reset --hard
 
       - name: List output files

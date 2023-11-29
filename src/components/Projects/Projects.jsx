@@ -3,32 +3,21 @@ import Project from "../Project/Project";
 import { useState, useEffect } from "react";
 import LoomPlayer from "../LoomPlayer/LoomPlayer";
 import "./Projects.scss";
+import axios from "axios";
 
-const axios = require("axios").default;
+// const axios = require("axios").default;
 
+const Jclear_API = process.env.REACT_APP_JAMES_CLEAR;
 const Projects = () => {
-  const [animeQuote, setAnimeQuote] = useState();
-  const [animeQuoteAnime, setAnimeQuoteAnime] = useState();
-  const [animeQuoteCharacter, setAnimeQuoteCharacter] = useState();
+  const [jclearQuote, setJclearQuote] = useState();
 
+  const getAnime = () => {
+    axios.get(Jclear_API).then((response) => {
+      setJclearQuote(response.data);
+    });
+  };
   useEffect(() => {
-    const Anime_API = process.env.REACT_APP_ANIME_API;
-
-    const getAnime = () => {
-      axios
-        .get(Anime_API, {
-          headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-          },
-        })
-        .then((response) => {
-          setAnimeQuote(response.data.quote);
-          setAnimeQuoteAnime(response.data.anime);
-          setAnimeQuoteCharacter(response.data.character);
-        });
-    };
-    // getAnime();
+    getAnime();
   }, []);
   return (
     <section>
@@ -40,16 +29,15 @@ const Projects = () => {
           return <Project key={i} project={project} />;
         })}
 
-        {animeQuote && (
-          <div className="projects__anime-quote">
-            <h3 className="projects__anime-heading">Anime Quote</h3>
-            <h4 className="projects__anime-quotation">{animeQuote}</h4>
-            <p>Character: {animeQuoteCharacter}</p>
-            <p>Anime: {animeQuoteAnime}</p>
-            <br />
-            <p>
-              Disclaimer: The quotes are gotten from external APIs/servers I do
-              not control.
+        {jclearQuote && (
+          <div className="projects__jclear-quote">
+            <h3 className="projects__jclear-heading">James Clear Quote</h3>
+            <h4 className="projects__jclear-quotation">{jclearQuote.text}</h4>
+            <p className="projects__jclear-source">
+              Link to source:{" "}
+              <a href={jclearQuote.source} target="_blank" rel="noreferrer">
+                {jclearQuote.source}
+              </a>
             </p>
           </div>
         )}

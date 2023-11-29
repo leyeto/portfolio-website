@@ -1,7 +1,6 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import "./Hero.scss";
-
-const axios = require("axios").default;
 
 const Hero = () => {
   const [quotableQuote, setQuotableQuote] = useState();
