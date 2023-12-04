@@ -2,7 +2,7 @@
 @use "../../../styles/breakpoints" as b;
 
 .about {
-  margin: 20vh auto;
+  margin: 10vh auto 5vh;
   width: min(100% - 6rem, 70rem);
 
   &__heading {
@@ -29,7 +29,7 @@
   }
 
   &__skills {
-    margin: 10vh 0;
+    margin: 5vh 0;
   }
   &__skills-heading {
     color: c.$mine-lightest-blue;
@@ -37,9 +37,9 @@
 
   &__skills-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     @include b.breakpoint("medium") {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
     }
   }
   // &__skills-list {
@@ -50,13 +50,13 @@
 
   &__skill-item {
     margin: 2rem 2rem;
-    width: 15rem;
-    height: 15rem;
+    width: 8rem;
+    height: 8rem;
     text-align: center;
   }
 
   &__skill-img {
-    height: 10rem;
+    height: 5rem;
   }
 
   &__skill-name {

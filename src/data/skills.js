@@ -54,7 +54,7 @@ const skills = [
     url: `${awsIcon}`,
   },
   {
-    skill: "GITHUB",
+    skill: "GIT",
     percentage: 40,
     url: `${githubIcon}`,
   },

@@ -32,7 +32,7 @@ const Projects = () => {
         {jclearQuote && (
           <div className="projects__jclear-quote">
             <h3 className="projects__jclear-heading">James Clear Quote</h3>
-            <h4 className="projects__jclear-quotation">{jclearQuote.text}</h4>
+            <p className="projects__jclear-quotation">{jclearQuote.text}</p>
             <p className="projects__jclear-source">
               Link to source:{" "}
               <a href={jclearQuote.source} target="_blank" rel="noreferrer">
