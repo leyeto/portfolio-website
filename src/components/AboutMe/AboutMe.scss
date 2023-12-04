@@ -2,7 +2,7 @@
 @use "../../../styles/breakpoints" as b;
 
 .about {
-  margin: 20vh auto;
+  margin: 10vh auto 5vh;
   width: min(100% - 6rem, 70rem);
 
   &__heading {
@@ -29,7 +29,7 @@
   }
 
   &__skills {
-    margin: 10vh 0;
+    margin: 5vh 0;
   }
   &__skills-heading {
     color: c.$mine-lightest-blue;
