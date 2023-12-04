@@ -29,6 +29,7 @@
   }
 
   &__list-item {
+    margin: 0 1.2rem;
     @include b.breakpoint("medium") {
       margin: 0 2rem;
     }
